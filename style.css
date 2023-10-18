@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Rubik;
+}
+
+section{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;   
+    height: 100vh;
+    background-image: url(bg.jpg);
+    background-size:cover;
+    background-clip: content-box;
+    background-repeat: no-repeat;
+    transition: 0.5s all ease;
+}
+
+.login {
+    position: relative;
+    width: 500px;
+    padding: 60px;
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.5) ;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+    transition: 0.5s all ease;
+}
+
+.login h2{
+    width: 100%;
+    text-align: center;
+    font-size: 42px;
+    padding: 25px 0;
+    color: white;
+}
+
+.login .inputbox{
+    margin: 10px 0;
+}
+
+.login .inputbox input{
+    margin: 10px 0;
+    width: 100%;
+    color: white;
+    outline: none;
+    font-size: 24px;
+    border-radius: 5px;
+    padding: 15px 20px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.login .inputbox ::placeholder{
+    color: white;
+}
+
+.group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.group a{
+    text-decoration: none;
+    color: white;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .container{
+        background-position: 50%;
+    }
+
+    .login {
+        position: relative;
+        width: 300px;
+        padding: 25px;
+        border-radius: 10px;
+    }
+
+    .login h2{
+        width: 100%;
+        text-align: center;
+        font-size: 28px;
+        padding:15px 0;
+        color: white;
+    }
+    
+    .login .inputbox{
+        margin: 10px 0;
+    }
+    
+    .login .inputbox input{
+        margin: 10px 0;
+        outline: none;
+        font-size: 18px;
+        border-radius: 5px;
+        padding: 7.5px 10px;
+    }
+
+    .group{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 7.5px 0;
+    }
+    
+
+}
+
